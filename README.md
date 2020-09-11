@@ -28,13 +28,50 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
-1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web. 
+
+React JS is a compnent based library that is used to make interactive user-interfaces.
+It solves the problem of taking a long time to build an app by providing a reusable library. 
+
+JSX- HTML like code that is used to edit the virtual DOM
+Vitural DOM-if a developed uses JSW to manipulate the DOM- a virtual Dom is created to make a copy of the change in state to the one thing that is actually changed (ex: clicking a button reloads one single section as opposed to the entire DOM)
+
+
+
+
+
 
 1. Describe component state.
 
+setState()- schedules and update to the component's state(data). when state changes, the component re-renders. 
+
 1. Describe props.
 
+props are the properties that get passed to the component (parameters)
+information set by the parent component
+a component can not change its props
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+A side effect is anything that affects something outside the scope of the function being executed. Fetching data from an API, timers, logging, and manually manipulating the DOM are all examples of side effects. 
+
+useEffect (()=>{
+.then()
+.catch()
+},[])-- this would run only have the first render 
+
+useEffect(()=>{
+.then()
+.catch()
+})-- runs after every render 
+
+useEffect (()=>{
+.then()
+.catch()
+},[prop])-- runs when a particular variable changes 
+
+
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
