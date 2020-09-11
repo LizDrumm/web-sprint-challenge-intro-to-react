@@ -6,6 +6,7 @@ import styled, {keyframes} from 'styled-components'
 
 //change the background pic opacity?
 const StyledApp = styled.div`
+background-color:rgba(255,255,255, 0.03);
 `
 
 const kf = keyframes `
