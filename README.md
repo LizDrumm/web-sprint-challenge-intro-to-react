@@ -37,10 +37,6 @@ JSX- HTML like code that is used to edit the virtual DOM
 Vitural DOM-if a developed uses JSW to manipulate the DOM- a virtual Dom is created to make a copy of the change in state to the one thing that is actually changed (ex: clicking a button reloads one single section as opposed to the entire DOM)
 
 
-
-
-
-
 1. Describe component state.
 
 setState()- schedules and update to the component's state(data). when state changes, the component re-renders. 

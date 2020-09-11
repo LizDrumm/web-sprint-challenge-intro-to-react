@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import styled, {keyframes} from 'styled-components'
 
 
+
 const StyledCharacter = styled.div`
     border: 2px solid ${pr => pr.theme.primaryColor};
     border-radius: 15px;
@@ -23,18 +24,22 @@ p{
     font-weight:bolder;
     color: ${pr => pr.theme.black};
     padding-top:${pr => pr.theme.topPadding};
-    padding-bottom: 1%;
+    padding-bottom: ${pr => pr.theme.bottomPadding};
+}
+
+button{
+    background:${pr => pr.theme.primaryColor};
+    border-radius:10px ;
+    margin-bottom: 5%;
+    font-weight:bolder;
 }
 
 a{
-    padding-bottom:4%;
-
-    margin: 2px;
+    color: ${pr => pr.theme.white};
+    text-decoration: none;
 }
 
 `
-
-
 
 
 const Character=(props)=>{
@@ -43,10 +48,12 @@ const Character=(props)=>{
     return (
         <StyledCharacter>
         <h2> 🚀{name}</h2>
-        <p>Height: {height}</p>
+        <p>Height: {height} inches </p>
         <p>Birth Year: {birth_year}</p>
         <p>Gender: {gender}</p>
+        <button>
         <a href = {homeworld}>See Homeworld</a>
+        </button>
         </StyledCharacter>
         )
     }

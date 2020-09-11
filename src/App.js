@@ -4,12 +4,17 @@ import axios from 'axios'
 import Character from './components/Character'
 import styled, {keyframes} from 'styled-components'
 
-
-
+//change the background pic opacity?
 const StyledApp = styled.div`
+`
 
+const kf = keyframes `
+30% {
+  transform: scale(3);
+}
 `
 const StyledCard = styled.div`
+animation: ${kf} 2s forwards;
 display: flex;
 justify-content:center;
 flex-wrap:wrap;

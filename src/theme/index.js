@@ -4,7 +4,7 @@ export default {
     white:'white',
     black:'black', 
     topPadding: '1%',
-    bottomPadding: '4%',
+    bottomPadding: '1%',
     mobileBreakpoint:'(max-width: 550px)'
 
 }
